@@ -1,0 +1,98 @@
+*{ 
+    margin: 0;
+    padding: 0;
+   
+   
+}
+h1{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 75%em;
+}
+.parent{
+position: relative;
+
+
+height: 200px;
+padding: 5px;
+
+}
+.child{
+    position: relative;
+    border: 1px solid black;
+    background-color: rgb(157, 126, 187);
+    padding: 50px 10px 30px 10px;
+ 
+    margin:0 10px ;
+    float: left;
+    
+    
+    }
+    h2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 25%em;
+        margin: 0;
+        border-left:1px solid black ;
+        border-bottom:1px solid black ;
+        width: 39%;
+        padding: 2px 20px ;
+        text-align: center;
+    }
+    p{
+        margin: 0px 10px;
+    }
+    .Chicken{
+        background-color: rgb(204, 118, 118);
+    }
+    .Beef{
+        color: #fff;
+        background-color: rgb(112, 163, 184);
+    }
+    .Sushi{
+        background: rgb(236, 224, 112);
+    }
+    @media (min-width:992px){
+        .child{
+            width: 31.6%;
+
+            padding: 35px 0px 25px;
+            float: left;
+
+        }
+    }
+
+@media (min-width:991px) and (max-width:1281px){
+    .child{
+        width: 30%;
+
+        padding: 35px 0px 25px;
+        float: left;
+}
+.child1{
+    margin-left: 20px;
+}
+.child2{
+    margin: 0 20px;
+}
+.child3{
+    margin-left: 10px;
+}
+}
+@media (min-width:768px) and (max-width:991px){
+.child1 ,.child2{
+    width: 42.5%;margin: 10px ;
+    
+}
+.child3{
+    margin: 10px;
+    width: 90%;
+}
+}
+@media (max-width:767px){
+    .child1,.child2,.child3{
+        width: 90%;
+        margin-top: 30px;
+    }
+}
